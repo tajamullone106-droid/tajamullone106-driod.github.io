@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wallet Hub — Secure Wallet Demo</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <a class="brand" href="#">
+    <span class="mark">W</span>
+    <span>Wallet Hub</span>
+  </a>
+
+  <button class="nav-btn" id="connectTop">
+    Connect Wallet
+  </button>
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-copy">
+
+    <span class="eyebrow">
+      SECURE WALLET CONNECTION
+    </span>
+
+    <h1>
+      Your wallet.<br>
+      <span>Simple & secure.</span>
+    </h1>
+
+    <p>
+      Connect your wallet without entering a recovery phrase
+      or private key. This website only uses public connection
+      information.
+    </p>
+
+    <div class="actions">
+      <button class="primary" id="connectMain">
+        Connect Wallet
+      </button>
+
+      <button class="secondary" id="learn">
+        How it works
+      </button>
+    </div>
+
+    <div class="safe-note">
+      <span>✓</span>
+      We never ask for your recovery phrase.
+    </div>
+
+  </div>
+
+  <div class="card-wrap">
+
+    <div class="wallet-card">
+
+      <div class="card-top">
+        <span>WALLET HUB</span>
+        <span>●●●</span>
+      </div>
+
+      <div class="card-symbol">
+        W
+      </div>
+
+      <div class="card-balance">
+        ••••••
+      </div>
+
+      <div class="card-address">
+        Public wallet connection
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="features">
+
+  <article>
+    <div class="icon">01</div>
+
+    <h3>
+      Connect securely
+    </h3>
+
+    <p>
+      Use your wallet's normal connection flow.
+      No secret credentials are requested.
+    </p>
+  </article>
+
+
+  <article>
+    <div class="icon">02</div>
+
+    <h3>
+      Public information only
+    </h3>
+
+    <p>
+      The website can display a wallet address after
+      a legitimate connection.
+    </p>
+  </article>
+
+
+  <article>
+    <div class="icon">03</div>
+
+    <h3>
+      Easy to deploy
+    </h3>
+
+    <p>
+      Plain HTML, CSS and JavaScript that can be
+      hosted for free.
+    </p>
+  </article>
+
+</section>
+
+
+<section class="how" id="how">
+
+  <h2>
+    How the connection works
+  </h2>
+
+  <div class="steps">
+
+    <div>
+      <b>1</b>
+      <span>
+        Tap Connect Wallet
+      </span>
+    </div>
+
+    <div>
+      <b>2</b>
+      <span>
+        Approve the connection inside your wallet
+      </span>
+    </div>
+
+    <div>
+      <b>3</b>
+      <span>
+        The site receives only allowed public connection data
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<div class="modal hidden" id="modal">
+
+  <div class="modal-box">
+
+    <button class="close" id="close">
+      ×
+    </button>
+
+    <div class="modal-logo">
+      W
+    </div>
+
+    <h2>
+      Connect Wallet
+    </h2>
+
+    <p>
+      Choose a wallet or use the demo connection.
+      <strong>
+        Never enter a recovery phrase here.
+      </strong>
+    </p>
+
+    <button class="wallet-option" id="demoConnect">
+      <span>Demo wallet connection</span>
+      <span>→</span>
+    </button>
+
+    <div class="status" id="status"></div>
+
+  </div>
+
+</div>
+
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>
